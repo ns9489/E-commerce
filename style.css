@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f0f3f2;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    gap: 20rem; 
+}
+hr {
+    width: 100%;
+    margin:1rem;
+}
+
+h1 {
+    margin: 0; 
+    text-align: center; 
+    font-family: "Fascinate Inline", system-ui;
+
+}
+.filtro {
+    background-color: #27374D;
+    height: 4rem;
+}
+#container-Cards {
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    justify-content: center;
+    border: 1px solid transparent;
+    background-color: #afb9b6; 
+}
+.Clothes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    width: 21rem;
+    height: 12rem;
+    padding: 0.5rem;
+    
+}
+
+.Clothes img {
+    width: 7rem;
+    height: auto;
+    object-fit: contain;
+    gap: 1rem;
+}
+
+.container-description  {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.container-description h2 {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.container-description h3 {
+    padding: 0.1rem;
+}
+
+.container-description > button {
+    background-color: #07121d; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 0.5rem 1rem; 
+    pointer-events: fill;
+    align-items: center;
+}
+
+.container-description button:hover {
+    background-color: #2f3336; 
+}
