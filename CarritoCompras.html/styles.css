@@ -1,0 +1,8 @@
+*{
+    height: auto;
+}
+
+header{
+    height: 10rem;
+    background-image: (url(../assets/banner-ropa.png.jpg));
+}

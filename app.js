@@ -38,38 +38,6 @@ containerDescription.appendChild(shoppingClothes)
 containerCards.appendChild(card)
 }
 
-/*
-const createClothes = (clothe) => {
-    const card = document.createElement('div')
-    card.classList.add('card')
-
-    const imgClothe = document.createElement('img')
-    imgClothe.src = clothe.image
-    imgClothe.alt = clothe.title
-
-    const divClothe = document.createElement('div')
-    divClothe.classList.add('description-card')
-
-    const descriptionClothe = document.createElement('h5')
-    descriptionClothe.textContent = clothe.title
-
-    const priceClothe = document.createElement('h4')
-    priceClothe.textContent = `$${clothe.price}`
-
-    const buttonAddCar = document.createElement('button')
-    buttonAddCar.textContent = 'Añadir al Carrito';
-
-    card.appendChild(imgClothe)
-
-    card.appendChild(divClothe)
-    divClothe.appendChild(descriptionClothe)
-    divClothe.appendChild(priceClothe)
-    divClothe.appendChild(buttonAddCar)
-
-    containerCards.appendChild(card)
-}
-*/
-
 const generateAllClothes = async() =>{
     const data = await getAPI(URL)
     data.forEach(clothes => createCards(clothes));

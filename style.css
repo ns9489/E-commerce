@@ -31,6 +31,14 @@ h1 {
     font-family: "Fascinate Inline", system-ui;
 
 }
+
+#cart-icon{
+    cursor: pointer;
+}
+
+.cart-icon:hover{
+    opacity: 0.8;
+}
 .filtro {
     background-color: #27374D;
     height: 4rem;
@@ -68,7 +76,7 @@ h1 {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+
 }
 
 .container-description h2 {
