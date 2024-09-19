@@ -43,10 +43,10 @@ const createCards = (clothes) => {
 const addToCart = (clothes) => {
     cart.push(clothes);
     localStorage.setItem("cart", JSON.stringify(cart)); // Guarda en localStorage
-    verCarrito.click(); // Abre la modal automáticamente (opcional)
+    verCarrito.click(); // Abre la modal automáticamente
 };
 
-// Crear el fondo de la modal
+// Crea el fondo de la modal
 const modalOverlay = document.createElement("div");
 modalOverlay.classList.add("modal-overlay");
 document.body.appendChild(modalOverlay);
@@ -58,13 +58,13 @@ verCarrito.addEventListener("click", () => {
     const modalHeader = document.createElement("div");
     modalHeader.classList.add("modal-header");
     modalHeader.innerHTML = `<h1 class="modal-header-title">Carrito</h1>`;
-    modalContainer.append(modalHeader);
+    modalContainer.appendChild(modalHeader);
 
     const modalButton = document.createElement("h1");
     modalButton.innerText = "X";
     modalButton.className = "modal-header-button";
     modalButton.onclick = closeModal; // Usa la función para cerrar
-    modalHeader.append(modalButton);
+    modalHeader.appendChild(modalButton);
 
     if (cart.length === 0) {
         const emptyMessage = document.createElement("div");
@@ -111,19 +111,18 @@ verCarrito.addEventListener("click", () => {
         totalbuying.innerHTML = `Total a pagar: $${total.toFixed(2)}`;
         modalContainer.append(totalbuying);
 
-        // Agregar botón de Finalizar Compra
+        // Agrega botón de Finalizar Compra
         const finishButton = document.createElement("button");
         finishButton.classList.add("finishButton");
         finishButton.innerText = "Finalizar Compra";
         finishButton.onclick = () => {
             alert("Compra realizada con éxito!");
-            cart = []; // Vaciar el carrito
-            localStorage.setItem("cart", JSON.stringify(cart)); // Actualizar el localStorage
-            closeModal(); // Cerrar la modal
+            cart = []; // Vacia el carrito
+            localStorage.setItem("cart", JSON.stringify(cart)); // Actualiza el localStorage
+            closeModal(); // Cierra la modal
         };
 
-
-        modalContainer.append(finishButton); // Asegúrate de añadir el botón al contenedor de la modal
+        modalContainer.append(finishButton); 
     }
     modalContainer.classList.add("show"); // Muestra la modal
 });
