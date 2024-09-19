@@ -11,33 +11,19 @@
         <div class="logo">
             <img src="assets/tux-logo-48.png" alt="logo">
             <h1>Productos</h1>
-            <a href="CarritoCompras/index.html" id="card-link">
-                <img src="assets/shopping-bag-regular-36.png" alt="logo2" id="cart-icon">
-            </a>
+            <h1 class="ver-carrito" id="ver-carrito">🛒</h1>
         </div>
     </header>
-    <!-- MODAL CARRITO -->
-    <!-- MODAL CARRITO -->
-<div class="modal" id="jsModalCarrito" style="display:none;"> <!-- Oculto por defecto -->
-    <div class="modal__container">
-        <button type="button" class="modal__close">X</button>
-        <h2><i class="cart"></i> Carrito</h2>
-        <div class="modal__body" id="modalBody">
-            <!-- Aquí se agregarán los productos que se agregan al carrito -->
-        </div>
-        <div class="modal__footer">
-            <button id="finalizarCompra" class="btn-default">Finalizar Compra</button>
-            <button id="vaciarCarrito" class="btn-default">Eliminar</button>
-        </div>
-    </div>
-</div>
-
-
     <main>
         <hr>
         <div class="filtro"></div>
         <div id="container-Cards" class="container-Cards"></div>
     </main>
+    <!-- modal carrito-->
+    <div id="modal-container" class="modal-container"></div>
+
+    
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
