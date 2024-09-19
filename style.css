@@ -47,7 +47,7 @@ h1 {
     padding: 4rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; 
+    gap: 1rem;
     justify-content: center;
     border: 1px solid transparent;
     background-color: #f7fefc; 
@@ -61,7 +61,6 @@ h1 {
     width: 21rem;
     height: 12rem;
     padding: 0.5rem;
-    
 }
 
 .Clothes img {
@@ -102,20 +101,6 @@ h1 {
 .container-description button:hover {
     background-color: #e6e9ec; 
 }
-.modal-container {
-    display: block;
-    width: 40%;
-    max-height: 88vh;
-    color: #131212;
-    background-color: #ffff;
-    right: 0; 
-    position: fixed;
-    overflow: auto;
-    z-index: 9;
-    top: 12vh;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-}
 
 .modal-container.show {
     transform: translateX(0); 
@@ -141,14 +126,6 @@ h1 {
 
 .modal-container ::-webkit-scrollbar{
     display: none;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: space-around;
-    background-color: #e6ebf1;
-    color: hsl(0, 43%, 99%);
-    width: 100%;
 }
 
 .modal-header-title {

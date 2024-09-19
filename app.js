@@ -89,7 +89,7 @@ verCarrito.addEventListener("click", () => {
             priceClothes.textContent = `$${clothes.price}`;
 
             const removeButton = document.createElement("button");
-            removeButton.innerText = "🗑 Eliminar";
+            removeButton.innerText = " Eliminar";
             removeButton.onclick = () => {
                 cart.splice(index, 1);
                 localStorage.setItem("cart", JSON.stringify(cart));
